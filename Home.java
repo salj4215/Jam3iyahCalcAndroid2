@@ -1,7 +1,9 @@
 package com.cybersynergysoftworks.jam3iyahcalcandroid;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class Home extends AppCompatActivity {
 
@@ -11,5 +13,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    //testing push
+    public void createJam3iya(View view) {
+        Intent displayCreateJamForm = new Intent(this, CreateNewJam3iyaDetails.class);
+        startActivity(displayCreateJamForm);
+    }
 }
